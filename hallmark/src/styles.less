@@ -1,0 +1,48 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
+*{box-sizing: border-box;}
+
+:root{
+    /* Whites, Greys & Blacks */
+    --white: #fff;
+    --grey-100: #F9FAFB;
+    --grey-200: #F3F4F6;
+    --grey-300: #E5E7EB;
+    --grey-400: #D1D5DB;
+    --grey-500: #9CA3AF;
+    --grey-600: #6B7280;
+    --grey-700: #4B5563;
+    --grey-800: #374151;
+    --grey-900: #1F2937;
+    --grey-1000: #1F2937;
+    --black: #000;
+
+    /* Primarys */
+    --primary-100: #EEF2FF;
+    --primary-200: #E0E7FF;
+    --primary-300: #C7D2FE;
+    --primary-400: #A5B4FC;
+    --primary-500: #818CF8;
+    --primary-600: #6366F1;
+    --primary-700: #4F46E5;
+    --primary-800: #4338CA;
+    --primary-900: #394BA0;
+    --primary-1000: #312E81;
+
+}
+
+::-webkit-scrollbar{width: 12px;}
+::-webkit-scrollbar-track{background: var(--grey-300);}
+::-webkit-scrollbar-thumb{width: 10px; border: 2px solid var(--grey-300); background: var(--grey-700); border-radius: 12px; transition: .25s ease-in-out;}
+::-webkit-scrollbar-thumb:hover {background: var(--grey-900);}
+
+html{font-family: 'Crimson Text', serif; font-size: 16px;}
+
+body{background: var(--primary-100); color: var(--grey-900); min-height: 100vh;}
+h1{font-size: 42px; font-weight: 600; color: var(--primary-900); margin: 40px 0;}
+p{max-width: 65vw; font-size: 21px; line-height: 1.4; color: var(--grey-1000);}
+a{text-decoration: none;}
+section{width: 100%; padding: 40px 0;
+    h2{display: inline-block; font-size: 36px; font-weight: 600; color: var(--primary-900); margin-bottom: 40px; position: relative;
+        &:after{content: ''; width: 33%; height: 3px; border-radius: 12px; background: var(--primary-300); position: absolute; bottom: -8px; left: 0;}
+    }
+}
